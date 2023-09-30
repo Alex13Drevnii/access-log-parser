@@ -4,8 +4,19 @@ import java.util.Scanner;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Введите текст и нажмите <Enter>:");
-        String text = new Scanner(System.in).nextLine();
-        System.out.println("Длина текста: " + text.length());
+        System.out.println("Введите число");
+        int number = new Scanner(System.in).nextInt();
+        System.out.println("Введите второе число");
+        int number2 = new Scanner(System.in).nextInt();
+
+        int sum = number + number2;
+        int delta = number - number2;
+        int  multip = number * number2;
+        double quotient = (double) number / number2;
+
+        System.out.println("Cумма чисел:" + sum);
+        System.out.println("Разность чисел:" + delta);
+        System.out.println("Произведение чисел:" + multip);
+        System.out.println("Деление чисел:" + quotient);
     }
 }
